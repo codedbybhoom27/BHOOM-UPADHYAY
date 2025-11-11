@@ -1,0 +1,23 @@
+#include<stdio.h>
+ /*Bhoomi Upadhyay,
+ UIN=251P078,
+ Branch=C.E.(F.E.),
+ Batch=D*/
+ void counter()   //void means no return data type;
+ {  //int count=0;
+     static int count=0;   //static storage class;
+     count++;
+     printf("Counter Function Call : %d\n",count);
+ }
+ int main()
+ {
+     printf("\t\t\t***Storage Class***\n\n");
+     for(int i=1;i<=8;i++)
+     {
+         counter();     //counter function called 8 times;
+     }
+     return 0;
+ }
+ 
+ 
+ 
