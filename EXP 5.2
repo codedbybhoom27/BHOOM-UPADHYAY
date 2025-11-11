@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/*Bhoomi Upadhyay,
+UIN=251P078,
+Branch=C.E.(F.E.),
+Batch=D*/
+
+int factorialRecursive(int num)
+{
+    if(num<=1)  //If Number is 0 or 1 then Factorial is 1
+    {
+        return 1;
+    }
+    return num*factorialRecursive(num-1); //Recursive Function
+}
+int main() {
+    int num;
+    printf("\t\t\t***Recursive Factorial***\n\n");  //Title
+    printf("Enter Number= ");
+    scanf("%d",&num);
+    printf("factorial of %d is %d",num,factorialRecursive(num));  //calling function
+    return 0;
+}
