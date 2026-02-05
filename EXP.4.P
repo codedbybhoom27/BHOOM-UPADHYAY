@@ -1,0 +1,9 @@
+'''#UIN-251P078 Bhoomi Upadhyay '''
+print("251P078 Bhoomi Upahyay")
+
+principle=float(input("Enter The Principle Amount:"))
+rate=float(input("Enter The Rate Of Interest :"))
+time=float(input("Enter The Time Period In Years:"))
+simple_interest = (principle * rate * time)/100
+
+print("Simple Interest Is :", simple_interest)
